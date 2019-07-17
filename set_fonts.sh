@@ -1,8 +1,8 @@
 #!/bin/sh
 
-wget https://github.com/xNNism/ConfigHelperGUI/blob/master/fonts/fonts.tar.gz?raw=true
-mv fonts.tar.gz?raw=true fonts.tar.gz
-tar xf fonts.tar.gz -C /usr/share/fonts/
-rm fonts.tar.gz
+cp -r appearance/fonts/terminess /usr/share/fonts/
+cp -r appearance/fonts/xos4 /usr/share/fonts/
+cp -r appearance/fonts/proggy /usr/share/fonts/
+pacman -U nerd-fonts-complete-2.0.0-5-any.pkg.tar.xz
 
 exit
